@@ -1,0 +1,61 @@
+query_idx,embedding,row_idx,score,title
+0,template_10k,5683,0.6929653286933899,Head Bands No Slip Women's Rhinestone Head With Geadband For Teenage Girls And Children With Anti-Slip Teeth Shiny And Shiny Fashion Bangs Female Headwear And Crown Curler Headband(pink)
+0,template_10k,4329,0.6764963865280151,CoverYourHair Colorful Plastic Headbands- Bulk Headbands (36 Pack Thin Headbands) - Hard Headbands - Hair Accessories
+0,template_10k,4276,0.6722861528396606,"MHDGG Knotted Headbands for Women Girls,Glitter Mesh Hairband Head Band for Women Wide Headbands Shiny Sequin Cross Knot Hair Hoop Headband Bezel Hair Accessories,Silver"
+0,template_10k,8568,0.6600085496902466,Sethexy Fashion Sport Headband Elastic Knotted Hair Band Pure Color Handmade Hair Accessories for Women and Girls(8pcs)
+0,template_10k,5914,0.6599599123001099,10 Pack Black Hairbands with Button for Women Head Wrap Elastic Hair Band Facemask Holder for Nurses Doctors
+0,template_jina-embeddings-v5-text-small,5040,0.7101321816444397,Silver Embossed Squares Headband Solid Hair band for Women and Girls
+0,template_jina-embeddings-v5-text-small,3229,0.6701353192329407,FAELBATY 2 Pcs Headbands for Women Knotted Headbands Glitter PU Wide Headbands for Women Cute Hairbands Fashion Knot Headband for Women(Black & Silver)
+0,template_jina-embeddings-v5-text-small,1046,0.6691261529922485,"LIHELEI Wide Headband for Women, Thick Knitted Headband Fashion Head Wrap in Solid Color Non-slip for Daily Festival Gift-4PCS Black/Red/Maroon/White"
+0,template_jina-embeddings-v5-text-small,915,0.6680812835693359,Silver Crystal Rhinestone 4 Row Elastic Stretch Hair Band Headband
+0,template_jina-embeddings-v5-text-small,5428,0.6624587774276733,"Mulbozy 3 Pcs Womens Fashion PU Leather Wide Headbands Knot Turban Headbands Elastic Hair Hoops Accessories for Women and Girls, 3 Colors Hair Bands"
+0,title,8510,0.6828181743621826,RE Style Maleficent Headband Black
+0,title,447,0.6528552770614624,Black Cone Spike Genuine Leather Top High Quality Cosplay Headband Goth Style
+0,title,1959,0.6424622535705566,France Luxe Headband Black One Size
+0,title,2036,0.6038201451301575,Funky Junque Textured Black White String Fabric Rhinestone Elastic Headband
+0,title,3045,0.5983173847198486,"Black Metal Headbands for Women, Hair Accessories (6 In, 10 Pack)"
+0,title_jina-embeddings-v5-text-small,1959,0.6802694201469421,France Luxe Headband Black One Size
+0,title_jina-embeddings-v5-text-small,9147,0.6770027875900269,Fashion Indian Exotic Boho Vacation Feather Leather Headband Hair Band Belt
+0,title_jina-embeddings-v5-text-small,3176,0.659405529499054,Burgundy 2 Inch Velvet Covered Headband with Teeth Women and Girls wide Hair Band
+0,title_jina-embeddings-v5-text-small,9668,0.6580600142478943,BANDED Wide No-Slip Headband (3-Pack)
+0,title_jina-embeddings-v5-text-small,447,0.6555745005607605,Black Cone Spike Genuine Leather Top High Quality Cosplay Headband Goth Style
+1200,template_10k,5422,0.6497840881347656,TIGI Serious Conditioner 5.07 oz ( Pack of 2)
+1200,template_10k,2013,0.6229683756828308,Syntonics Repair Therapy Conditioner 8oz
+1200,template_10k,9443,0.5987315773963928,Tigi Bed Head Re-Energize Shampoo 8.45oz + Conditioner 6.76oz
+1200,template_10k,902,0.5972563028335571,"WR Medical Therabath Hydrating Cream - Scentfree, 8 OZ # 0210"
+1200,template_10k,5427,0.596267819404602,Tigi Bed Head Urban Anti Dotes Resurrection Shampoo 8.45 Oz. & Conditioner 6.76 Oz. Duo for Weak Brittle Hair by Vidimear
+1200,template_jina-embeddings-v5-text-small,9443,0.66314697265625,Tigi Bed Head Re-Energize Shampoo 8.45oz + Conditioner 6.76oz
+1200,template_jina-embeddings-v5-text-small,5140,0.6520744562149048,Tigi Bed Head Men Clean Up Combo Shampoo 8.45 Oz. Conditioner 6.76 Oz
+1200,template_jina-embeddings-v5-text-small,5170,0.614280641078949,Tigi Copyright Custom Care Moisture Shampoo 32.79 oz
+1200,template_jina-embeddings-v5-text-small,5427,0.6142673492431641,Tigi Bed Head Urban Anti Dotes Resurrection Shampoo 8.45 Oz. & Conditioner 6.76 Oz. Duo for Weak Brittle Hair by Vidimear
+1200,template_jina-embeddings-v5-text-small,5422,0.6080544590950012,TIGI Serious Conditioner 5.07 oz ( Pack of 2)
+1200,title,5170,0.6236121654510498,Tigi Copyright Custom Care Moisture Shampoo 32.79 oz
+1200,title,5422,0.6015985608100891,TIGI Serious Conditioner 5.07 oz ( Pack of 2)
+1200,title,7960,0.511520266532898,Tigi Cosmetics Powder Foundation ~Charm~ - Pack of 2
+1200,title,5427,0.46459031105041504,Tigi Bed Head Urban Anti Dotes Resurrection Shampoo 8.45 Oz. & Conditioner 6.76 Oz. Duo for Weak Brittle Hair by Vidimear
+1200,title,7732,0.4504258632659912,TIGI Catwalk Oatmeal and Honey Shampoo Conditioner Duo
+1200,title_jina-embeddings-v5-text-small,5170,0.7239262461662292,Tigi Copyright Custom Care Moisture Shampoo 32.79 oz
+1200,title_jina-embeddings-v5-text-small,5422,0.6533992886543274,TIGI Serious Conditioner 5.07 oz ( Pack of 2)
+1200,title_jina-embeddings-v5-text-small,9443,0.5525736808776855,Tigi Bed Head Re-Energize Shampoo 8.45oz + Conditioner 6.76oz
+1200,title_jina-embeddings-v5-text-small,2013,0.546506404876709,Syntonics Repair Therapy Conditioner 8oz
+1200,title_jina-embeddings-v5-text-small,9624,0.5396873950958252,"Emergencia Toque Magico Emergencia Deep Intense Hair Treatment 32 Fl. Oz., 32 Ounces"
+6200,template_10k,2333,0.8909428119659424,"18 Pieces Rhinestone Bobby Pins, Double Row Clear Crystal Hair Barrette Clips Metal Hair Pin Decorations for Women Girls, 9 Colors"
+6200,template_10k,9876,0.855414092540741,"Decorative Hairpin Bobby Pins for Women Lady Girls 12/Pkg, 6 Silver & Black Flowers 6 Jewelry Designer Decorated Bobby Pins"
+6200,template_10k,1099,0.7836434841156006,13 Pieces Words Letters Hair Clips Rhinestones Words Hair Pins Letters Bobby Pins Words Hair Clips Barrette Hair Accessories for Women Girls (Words and pearls)
+6200,template_10k,2957,0.7737423181533813,Zodiac Hair Pins Rhinestones Paved Constellation Letter Hair Clips Bobby Pins Wedding Crystal Bling Bridal Styling Barrette (so extra)
+6200,template_10k,66,0.7737187147140503,8 Pieces Snowflake Hair Clips Glitter Snowflake Bobby Pins Christmas Snowflake Hair Barrettes for Women Girls Hair Accessories
+6200,template_jina-embeddings-v5-text-small,2333,0.879008412361145,"18 Pieces Rhinestone Bobby Pins, Double Row Clear Crystal Hair Barrette Clips Metal Hair Pin Decorations for Women Girls, 9 Colors"
+6200,template_jina-embeddings-v5-text-small,9349,0.8772874474525452,"Pearl Hair Clips for Women Girls, Rhinestone Bobby Pins, Bangs Hairpins, Alligator Hair Accessories Set (10 Packs)"
+6200,template_jina-embeddings-v5-text-small,5523,0.8551952242851257,"Elcoho 24 Pieces Rhinestone Bobby Pin Metal Crystal Hair Clips Hair Barrette Clip Decorations for Women or Girls (Silver, Black)"
+6200,template_jina-embeddings-v5-text-small,9876,0.8413243293762207,"Decorative Hairpin Bobby Pins for Women Lady Girls 12/Pkg, 6 Silver & Black Flowers 6 Jewelry Designer Decorated Bobby Pins"
+6200,template_jina-embeddings-v5-text-small,4848,0.8347620964050293,Blufly Rhinestone Hair Clips with Words Crystal Barrette Clips Hollow Letter Diamante Hair Pin Horquillas Styling Tools for Women and Girls (5 Pcs)
+6200,title,2333,0.8254081606864929,"18 Pieces Rhinestone Bobby Pins, Double Row Clear Crystal Hair Barrette Clips Metal Hair Pin Decorations for Women Girls, 9 Colors"
+6200,title,9876,0.7727171182632446,"Decorative Hairpin Bobby Pins for Women Lady Girls 12/Pkg, 6 Silver & Black Flowers 6 Jewelry Designer Decorated Bobby Pins"
+6200,title,2602,0.7314913272857666,"Set Of 4 Super Cute Peacock Feather Brass Bobby Pins, Handmade Hair Clips"
+6200,title,2270,0.7223485708236694,20 Pcs Multicolor Snap Pearl Hair Clip Fashion Geometric Pearl Shape Hair Clips Plastic 10 Bright Color Hair Barrettes for Women Ladies Party Wedding Daily
+6200,title,9349,0.6990998983383179,"Pearl Hair Clips for Women Girls, Rhinestone Bobby Pins, Bangs Hairpins, Alligator Hair Accessories Set (10 Packs)"
+6200,title_jina-embeddings-v5-text-small,9349,0.9051257371902466,"Pearl Hair Clips for Women Girls, Rhinestone Bobby Pins, Bangs Hairpins, Alligator Hair Accessories Set (10 Packs)"
+6200,title_jina-embeddings-v5-text-small,2333,0.8967692255973816,"18 Pieces Rhinestone Bobby Pins, Double Row Clear Crystal Hair Barrette Clips Metal Hair Pin Decorations for Women Girls, 9 Colors"
+6200,title_jina-embeddings-v5-text-small,5523,0.8755960464477539,"Elcoho 24 Pieces Rhinestone Bobby Pin Metal Crystal Hair Clips Hair Barrette Clip Decorations for Women or Girls (Silver, Black)"
+6200,title_jina-embeddings-v5-text-small,5958,0.8266932368278503,8 PCS Womens Korean Fashion Crystal Rhinestone Barrette Hairpin Hair Clip Accessories (Random Color)
+6200,title_jina-embeddings-v5-text-small,9876,0.819251298904419,"Decorative Hairpin Bobby Pins for Women Lady Girls 12/Pkg, 6 Silver & Black Flowers 6 Jewelry Designer Decorated Bobby Pins"

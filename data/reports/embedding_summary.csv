@@ -1,0 +1,5 @@
+name,column,rows,dims
+template_10k,embedding_doc_embedding,10000,384
+template_jina-embeddings-v5-text-small,embedding_doc_embedding,10000,1024
+title,title_embedding,10000,384
+title_jina-embeddings-v5-text-small,title_embedding,10000,1024

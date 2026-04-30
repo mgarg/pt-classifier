@@ -9,9 +9,6 @@ def parse_column_names(column_names):
 
     return [str(col).strip() for col in column_names if str(col).strip()]
 
-# def get_output_file(output_dir, column_names):
-#     return os.path.join(output_dir, f"embeddings_{'_'.join(column_names)}.jsonl")
-
 def embed_dataset(
     data_file:str,
     output_file: str,
@@ -22,7 +19,7 @@ def embed_dataset(
     trust_remote_code: bool = False,
     task: str | None = None,
 ):
-    dataset = load_dataset("parquet", data_files=data_file, split="train")
+    dataset = load_dataset("parquet", data_files=data_file, split="train") 
     model = SentenceTransformer(model_name, trust_remote_code=trust_remote_code)
     model.max_seq_length = max_len
     columns = parse_column_names(column_names)
