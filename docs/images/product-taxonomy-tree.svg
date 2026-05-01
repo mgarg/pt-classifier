@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1146" viewBox="0 0 1400 1146">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Beauty Product Taxonomy</text>
+<text x="40" y="78" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Generated from KMeans title clusters using title-only Jina embeddings. Leaf badges show source title_cluster IDs and label confidence.</text>
+<rect x="570.0" y="120" width="260" height="52" rx="10" fill="#111827"/>
+<text x="700.0" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Beauty</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 190.0 193.0, 190.0 217.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="40" y="217" width="300" height="152" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="40" y="217" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="54" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Beauty Tools and Accessories</text>
+<text x="326" y="245" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">2 leaves</text>
+<rect x="56" y="275" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="66" y="290" font-family="Arial, sans-serif" font-size="12" fill="#111827">Refillable Containers</text>
+<rect x="270" y="278" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="297.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c1</text>
+<rect x="56" y="303" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="66" y="318" font-family="Arial, sans-serif" font-size="12" fill="#111827">Miscellaneous Accessories</text>
+<rect x="270" y="306" width="54" height="16" rx="8" fill="#fee2e2" stroke="#d1d5db"/>
+<text x="297.0" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c2</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 190.0 371.0, 190.0 395.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="40" y="395" width="300" height="152" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="40" y="395" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="54" y="423" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Body Care</text>
+<text x="326" y="423" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">2 leaves</text>
+<rect x="56" y="453" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="66" y="468" font-family="Arial, sans-serif" font-size="12" fill="#111827">Bath and Body Care</text>
+<rect x="270" y="456" width="54" height="16" rx="8" fill="#fef3c7" stroke="#d1d5db"/>
+<text x="297.0" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c15</text>
+<rect x="56" y="481" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="66" y="496" font-family="Arial, sans-serif" font-size="12" fill="#111827">Body Lotions and Tanning</text>
+<rect x="270" y="484" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="297.0" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c17</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 190.0 549.0, 190.0 573.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="40" y="573" width="300" height="124" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="40" y="573" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="54" y="601" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Fragrance</text>
+<text x="326" y="601" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">1 leaves</text>
+<rect x="56" y="631" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="66" y="646" font-family="Arial, sans-serif" font-size="12" fill="#111827">Fragrance and Deodorant</text>
+<rect x="270" y="634" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="297.0" y="646" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c14</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 190.0 699.0, 190.0 723.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="40" y="723" width="300" height="124" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="40" y="723" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="54" y="751" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Grooming</text>
+<text x="326" y="751" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">1 leaves</text>
+<rect x="56" y="781" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="66" y="796" font-family="Arial, sans-serif" font-size="12" fill="#111827">Personal Grooming Tools</text>
+<rect x="270" y="784" width="54" height="16" rx="8" fill="#fef3c7" stroke="#d1d5db"/>
+<text x="297.0" y="796" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c13</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 870.0 193.0, 870.0 217.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="720.0" y="217" width="300" height="292" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="720.0" y="217" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="734.0" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Hair</text>
+<text x="1006.0" y="245" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">7 leaves</text>
+<rect x="736.0" y="275" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="290" font-family="Arial, sans-serif" font-size="12" fill="#111827">Hair Extensions</text>
+<rect x="950.0" y="278" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c3</text>
+<rect x="736.0" y="303" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="318" font-family="Arial, sans-serif" font-size="12" fill="#111827">Hair Curling Tools</text>
+<rect x="950.0" y="306" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c4</text>
+<rect x="736.0" y="331" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="346" font-family="Arial, sans-serif" font-size="12" fill="#111827">Hair Care Products</text>
+<rect x="950.0" y="334" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="346" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c5</text>
+<rect x="736.0" y="359" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="374" font-family="Arial, sans-serif" font-size="12" fill="#111827">Hair Clips and Ties</text>
+<rect x="950.0" y="362" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c7</text>
+<rect x="736.0" y="387" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="402" font-family="Arial, sans-serif" font-size="12" fill="#111827">Headbands and Wraps</text>
+<rect x="950.0" y="390" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c8</text>
+<rect x="736.0" y="415" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="430" font-family="Arial, sans-serif" font-size="12" fill="#111827">Wigs and Hairpieces</text>
+<rect x="950.0" y="418" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c12</text>
+<rect x="736.0" y="443" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="458" font-family="Arial, sans-serif" font-size="12" fill="#111827">Combs and Brushes</text>
+<rect x="950.0" y="446" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c19</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 870.0 511.0, 870.0 535.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="720.0" y="535" width="300" height="180" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="720.0" y="535" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="734.0" y="563" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Makeup</text>
+<text x="1006.0" y="563" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">3 leaves</text>
+<rect x="736.0" y="593" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="608" font-family="Arial, sans-serif" font-size="12" fill="#111827">Eye and Brow Makeup</text>
+<rect x="950.0" y="596" width="54" height="16" rx="8" fill="#fef3c7" stroke="#d1d5db"/>
+<text x="977.0" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c0</text>
+<rect x="736.0" y="621" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="636" font-family="Arial, sans-serif" font-size="12" fill="#111827">False Eyelashes</text>
+<rect x="950.0" y="624" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="636" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c9</text>
+<rect x="736.0" y="649" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="664" font-family="Arial, sans-serif" font-size="12" fill="#111827">Face Makeup</text>
+<rect x="950.0" y="652" width="54" height="16" rx="8" fill="#fef3c7" stroke="#d1d5db"/>
+<text x="977.0" y="664" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c16</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 870.0 717.0, 870.0 741.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="720.0" y="741" width="300" height="152" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="720.0" y="741" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="734.0" y="769" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Nails</text>
+<text x="1006.0" y="769" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">2 leaves</text>
+<rect x="736.0" y="799" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="814" font-family="Arial, sans-serif" font-size="12" fill="#111827">Nail Care</text>
+<rect x="950.0" y="802" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="814" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c6</text>
+<rect x="736.0" y="827" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="842" font-family="Arial, sans-serif" font-size="12" fill="#111827">Body and Nail Decals</text>
+<rect x="950.0" y="830" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="842" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c18</text>
+<path d="M 700.0 172.0 C 700.0 196.0, 870.0 895.0, 870.0 919.0" fill="none" stroke="#d1d5db" stroke-width="1.5"/>
+<rect x="720.0" y="919" width="300" height="152" rx="12" fill="#f9fafb" stroke="#d1d5db"/>
+<rect x="720.0" y="919" width="300" height="44" rx="12" fill="#eef2ff" stroke="#d1d5db"/>
+<text x="734.0" y="947" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">Skin Care</text>
+<text x="1006.0" y="947" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">2 leaves</text>
+<rect x="736.0" y="977" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="992" font-family="Arial, sans-serif" font-size="12" fill="#111827">Face Skincare</text>
+<rect x="950.0" y="980" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="992" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c10</text>
+<rect x="736.0" y="1005" width="260" height="22" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+<text x="746.0" y="1020" font-family="Arial, sans-serif" font-size="12" fill="#111827">Facial Cleansing Tools</text>
+<rect x="950.0" y="1008" width="54" height="16" rx="8" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="977.0" y="1020" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#111827">c11</text>
+<text x="40" y="1110" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Confidence:</text>
+<rect x="122" y="1098" width="18" height="12" rx="3" fill="#dcfce7" stroke="#d1d5db"/>
+<text x="146" y="1110" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">high</text>
+<rect x="214" y="1098" width="18" height="12" rx="3" fill="#fef3c7" stroke="#d1d5db"/>
+<text x="238" y="1110" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">medium</text>
+<rect x="306" y="1098" width="18" height="12" rx="3" fill="#fee2e2" stroke="#d1d5db"/>
+<text x="330" y="1110" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">low</text>
+</svg>

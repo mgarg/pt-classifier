@@ -1,0 +1,682 @@
+{
+  "taxonomy_id": "beauty-product-taxonomy-template-v1",
+  "name": "Beauty Product Taxonomy - Template Clusters",
+  "version": 1,
+  "source": {
+    "cluster_labels_file": "data/cluster_labeling/template_clusters/template_cluster_labels.json",
+    "clustered_products_file": "data/clusters/kmeans_template_vs_title_jina_20_clusters.csv",
+    "embedding_strategy": "template jina-embeddings-v5-text-small",
+    "clustering_method": "KMeans",
+    "n_clusters": 20
+  },
+  "assignment": {
+    "cluster_column": "template_cluster",
+    "leaf_mapping": {
+      "0": "makeup.eye-and-brow-makeup",
+      "1": "hair.headbands-and-hair-covers",
+      "2": "hair.hair-care-products",
+      "3": "hair.hair-extensions",
+      "4": "nails.nail-tools",
+      "5": "beauty-tools-accessories.refillable-containers",
+      "6": "makeup.face-makeup",
+      "7": "skin-care.skin-care-treatments",
+      "8": "nails.nail-art-decals",
+      "9": "fragrance.fragrance-and-deodorant",
+      "10": "body-care.bath-and-body-care",
+      "11": "grooming.grooming-tools",
+      "12": "hair.hair-clips-and-accessories",
+      "13": "beauty-tools-accessories.miscellaneous-accessories",
+      "14": "nails.nail-polish",
+      "15": "nails.false-nails",
+      "16": "hair.wigs-and-hairpieces",
+      "17": "hair.hair-curling-tools",
+      "18": "body-art.temporary-tattoos",
+      "19": "makeup.false-eyelashes"
+    }
+  },
+  "nodes": [
+    {
+      "id": "beauty",
+      "label": "Beauty",
+      "level": 0,
+      "parent_id": null,
+      "description": "Root taxonomy for the ecommerce beauty catalog.",
+      "children": [
+        "beauty-tools-accessories",
+        "body-art",
+        "body-care",
+        "fragrance",
+        "grooming",
+        "hair",
+        "makeup",
+        "nails",
+        "skin-care"
+      ]
+    },
+    {
+      "id": "beauty-tools-accessories",
+      "label": "Beauty Tools and Accessories",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Refillable containers, travel bottles, general beauty tools, and miscellaneous beauty accessories.",
+      "children": [
+        "beauty-tools-accessories.refillable-containers",
+        "beauty-tools-accessories.miscellaneous-accessories"
+      ]
+    },
+    {
+      "id": "body-art",
+      "label": "Body Art",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Temporary tattoos, body art, tattoo stickers, tattoo stencils, and decorative body products.",
+      "children": [
+        "body-art.temporary-tattoos"
+      ]
+    },
+    {
+      "id": "body-care",
+      "label": "Body Care",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Body lotions, bath products, soaps, tanning products, waxing products, and body moisturizers.",
+      "children": [
+        "body-care.bath-and-body-care"
+      ]
+    },
+    {
+      "id": "fragrance",
+      "label": "Fragrance",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Perfumes, colognes, body sprays, deodorants, essential oils, and scented products.",
+      "children": [
+        "fragrance.fragrance-and-deodorant"
+      ]
+    },
+    {
+      "id": "grooming",
+      "label": "Grooming",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Personal grooming, dental care, shaving, facial cleansing tools, and hygiene tools.",
+      "children": [
+        "grooming.grooming-tools"
+      ]
+    },
+    {
+      "id": "hair",
+      "label": "Hair",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Hair care, hair styling tools, hair accessories, wigs, extensions, and grooming tools for hair.",
+      "children": [
+        "hair.headbands-and-hair-covers",
+        "hair.hair-care-products",
+        "hair.hair-extensions",
+        "hair.hair-clips-and-accessories",
+        "hair.wigs-and-hairpieces",
+        "hair.hair-curling-tools"
+      ]
+    },
+    {
+      "id": "makeup",
+      "label": "Makeup",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Color cosmetics and makeup-adjacent products for face, eyes, brows, lips, and lashes.",
+      "children": [
+        "makeup.eye-and-brow-makeup",
+        "makeup.face-makeup",
+        "makeup.false-eyelashes"
+      ]
+    },
+    {
+      "id": "nails",
+      "label": "Nails",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Nail care, manicure products, nail art, decals, polish, artificial nails, and nail tools.",
+      "children": [
+        "nails.nail-tools",
+        "nails.nail-art-decals",
+        "nails.nail-polish",
+        "nails.false-nails"
+      ]
+    },
+    {
+      "id": "skin-care",
+      "label": "Skin Care",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Facial skin care products and tools for cleansing, moisturizing, treatment, and exfoliation.",
+      "children": [
+        "skin-care.skin-care-treatments"
+      ]
+    },
+    {
+      "id": "beauty-tools-accessories.miscellaneous-accessories",
+      "label": "Miscellaneous Accessories",
+      "level": 2,
+      "parent_id": "beauty-tools-accessories",
+      "description": "Mixed accessories and outlier products including masks, jewelry, shower covers, bags, salon gowns, and unrelated items.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        13
+      ],
+      "confidence": "low",
+      "include_keywords": [
+        "mask",
+        "ear cover",
+        "cosmetic bag",
+        "shower cap",
+        "tiara",
+        "accessory"
+      ],
+      "exclude_keywords": [
+        "hair extensions",
+        "nail polish",
+        "skin care"
+      ]
+    },
+    {
+      "id": "beauty-tools-accessories.refillable-containers",
+      "label": "Refillable Containers",
+      "level": 2,
+      "parent_id": "beauty-tools-accessories",
+      "description": "Empty bottles, cosmetic tubes, travel containers, spray bottles, jars, pumps, and refillable packaging.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        5
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "empty bottle",
+        "refillable",
+        "container",
+        "jar",
+        "tube",
+        "spray bottle",
+        "travel bottle"
+      ],
+      "exclude_keywords": [
+        "finished cosmetics",
+        "perfume",
+        "body lotion"
+      ]
+    },
+    {
+      "id": "body-art.temporary-tattoos",
+      "label": "Temporary Tattoos",
+      "level": 2,
+      "parent_id": "body-art",
+      "description": "Temporary tattoos, tattoo stickers, body art stencils, fake tattoos, and related decorative body art products.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        18
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "temporary tattoo",
+        "tattoo sticker",
+        "body art",
+        "tattoo stencil",
+        "fake tattoo"
+      ],
+      "exclude_keywords": [
+        "nail decals",
+        "nail polish",
+        "makeup"
+      ]
+    },
+    {
+      "id": "body-care.bath-and-body-care",
+      "label": "Bath and Body Care",
+      "level": 2,
+      "parent_id": "body-care",
+      "description": "Soaps, body wash, body oils, lotions, bath products, wipes, waxing products, and body moisturizers.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        10
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "soap",
+        "body wash",
+        "body lotion",
+        "bath",
+        "body oil",
+        "wipes",
+        "wax"
+      ],
+      "exclude_keywords": [
+        "perfume",
+        "face serum",
+        "hair shampoo"
+      ]
+    },
+    {
+      "id": "fragrance.fragrance-and-deodorant",
+      "label": "Fragrance and Deodorant",
+      "level": 2,
+      "parent_id": "fragrance",
+      "description": "Perfumes, deodorants, body sprays, fragrance mists, essential oils, diffusers, and scented gift sets.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        9
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "perfume",
+        "deodorant",
+        "fragrance mist",
+        "body spray",
+        "essential oil",
+        "diffuser"
+      ],
+      "exclude_keywords": [
+        "body wash",
+        "hair spray",
+        "body lotion"
+      ]
+    },
+    {
+      "id": "grooming.grooming-tools",
+      "label": "Grooming Tools",
+      "level": 2,
+      "parent_id": "grooming",
+      "description": "Combs, brushes, shavers, dental tools, facial cleansing tools, razors, and personal grooming accessories.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        11
+      ],
+      "confidence": "medium",
+      "include_keywords": [
+        "comb",
+        "brush",
+        "shaver",
+        "toothbrush",
+        "flosser",
+        "blackhead remover",
+        "razor"
+      ],
+      "exclude_keywords": [
+        "makeup brushes",
+        "hair clips",
+        "nail tools"
+      ]
+    },
+    {
+      "id": "hair.hair-care-products",
+      "label": "Hair Care Products",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Shampoos, conditioners, treatments, oils, styling creams, hair color, and beard care products.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        2
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "shampoo",
+        "conditioner",
+        "hair oil",
+        "hair color",
+        "styling cream",
+        "beard oil"
+      ],
+      "exclude_keywords": [
+        "hair extensions",
+        "curling tools",
+        "hair clips"
+      ]
+    },
+    {
+      "id": "hair.hair-clips-and-accessories",
+      "label": "Hair Clips and Accessories",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Hair clips, scrunchies, barrettes, bun makers, claw clips, ponytails, beads, and decorative hair accessories.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        12
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "hair clips",
+        "scrunchies",
+        "barrette",
+        "claw clip",
+        "bun maker",
+        "hair beads",
+        "ponytail"
+      ],
+      "exclude_keywords": [
+        "headbands",
+        "wigs",
+        "curling tools"
+      ]
+    },
+    {
+      "id": "hair.hair-curling-tools",
+      "label": "Hair Curling Tools",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Curlers, rollers, curling irons, heatless curl tools, perm rods, and hair wavers.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        17
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "curlers",
+        "rollers",
+        "curling iron",
+        "heatless curls",
+        "perm rods",
+        "hair waver"
+      ],
+      "exclude_keywords": [
+        "hair care products",
+        "hair extensions",
+        "hair clips"
+      ]
+    },
+    {
+      "id": "hair.hair-extensions",
+      "label": "Hair Extensions",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Human hair and synthetic hair extensions, bundles, weaves, closures, frontals, tape-ins, and braiding hair.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        3
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "hair extensions",
+        "bundles",
+        "weave",
+        "closure",
+        "frontal",
+        "tape in",
+        "braiding hair"
+      ],
+      "exclude_keywords": [
+        "wigs",
+        "hair clips",
+        "shampoo"
+      ]
+    },
+    {
+      "id": "hair.headbands-and-hair-covers",
+      "label": "Headbands and Hair Covers",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Headbands, turbans, bonnets, shower caps, sleep caps, ear warmers, and decorative headwear.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        1
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "headband",
+        "turban",
+        "bonnet",
+        "shower cap",
+        "sleep cap",
+        "hair band"
+      ],
+      "exclude_keywords": [
+        "hair clips",
+        "wigs",
+        "hair extensions"
+      ]
+    },
+    {
+      "id": "hair.wigs-and-hairpieces",
+      "label": "Wigs and Hairpieces",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Synthetic wigs, human hair wigs, lace front wigs, cosplay wigs, bob wigs, and hairpieces.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        16
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "wig",
+        "lace front",
+        "synthetic wig",
+        "human hair wig",
+        "cosplay wig",
+        "hairpiece"
+      ],
+      "exclude_keywords": [
+        "hair extensions",
+        "hair clips",
+        "headbands"
+      ]
+    },
+    {
+      "id": "makeup.eye-and-brow-makeup",
+      "label": "Eye and Brow Makeup",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Eye, brow, mascara, liner, and makeup brush products used for color cosmetics and application.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        0
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "eyebrow",
+        "eyeliner",
+        "mascara",
+        "makeup brush",
+        "brow brush",
+        "spoolie"
+      ],
+      "exclude_keywords": [
+        "false eyelashes",
+        "nail tools",
+        "skin care"
+      ]
+    },
+    {
+      "id": "makeup.face-makeup",
+      "label": "Face Makeup",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Foundation, powder, lipstick, eyeshadow, highlighter, primer, and color cosmetic products.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        6
+      ],
+      "confidence": "medium",
+      "include_keywords": [
+        "foundation",
+        "powder",
+        "lipstick",
+        "eyeshadow",
+        "primer",
+        "highlighter"
+      ],
+      "exclude_keywords": [
+        "skin serum",
+        "nail polish",
+        "false eyelashes"
+      ]
+    },
+    {
+      "id": "makeup.false-eyelashes",
+      "label": "False Eyelashes",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "False eyelashes, lash extensions, eyelash packaging, magnetic lashes, lash tools, and related eye-lash products.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        19
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "false eyelashes",
+        "lashes",
+        "magnetic lashes",
+        "lash extensions",
+        "eyelash box",
+        "eyelid tape"
+      ],
+      "exclude_keywords": [
+        "eyebrow pencil",
+        "face makeup",
+        "fragrance"
+      ]
+    },
+    {
+      "id": "nails.false-nails",
+      "label": "False Nails",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Press-on nails, acrylic tips, fake nails, coffin nails, nail stands, and artificial nail supplies.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        15
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "false nails",
+        "press on nails",
+        "fake nails",
+        "nail tips",
+        "acrylic nails",
+        "coffin nails"
+      ],
+      "exclude_keywords": [
+        "nail polish",
+        "nail decals",
+        "manicure tools"
+      ]
+    },
+    {
+      "id": "nails.nail-art-decals",
+      "label": "Nail Art Decals",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Nail stickers, nail foils, glitter, rhinestones, decals, wraps, and decorative nail art accessories.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        8
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "nail sticker",
+        "nail decal",
+        "nail foil",
+        "glitter",
+        "rhinestones",
+        "nail wrap"
+      ],
+      "exclude_keywords": [
+        "nail polish",
+        "false nails",
+        "temporary tattoos"
+      ]
+    },
+    {
+      "id": "nails.nail-polish",
+      "label": "Nail Polish",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Gel polish, dip powder, nail lacquer, base coats, top coats, nail polish kits, and nail color products.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        14
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "nail polish",
+        "gel polish",
+        "dip powder",
+        "lacquer",
+        "base coat",
+        "top coat"
+      ],
+      "exclude_keywords": [
+        "false nails",
+        "nail decals",
+        "nail tools"
+      ]
+    },
+    {
+      "id": "nails.nail-tools",
+      "label": "Nail Tools",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Nail lamps, acrylic brushes, cuticle tools, manicure kits, nail dryers, and nail application tools.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        4
+      ],
+      "confidence": "high",
+      "include_keywords": [
+        "nail brush",
+        "nail lamp",
+        "cuticle",
+        "manicure set",
+        "nail dryer",
+        "acrylic nail"
+      ],
+      "exclude_keywords": [
+        "nail polish",
+        "false nails",
+        "temporary tattoos"
+      ]
+    },
+    {
+      "id": "skin-care.skin-care-treatments",
+      "label": "Skin Care Treatments",
+      "level": 2,
+      "parent_id": "skin-care",
+      "description": "Facial skin care, masks, serums, moisturizers, acne treatments, rollers, and skin treatment products.",
+      "cluster_source": "kmeans_template_jina_20",
+      "cluster_column": "template_cluster",
+      "cluster_ids": [
+        7
+      ],
+      "confidence": "medium",
+      "include_keywords": [
+        "serum",
+        "moisturizer",
+        "face mask",
+        "acne",
+        "jade roller",
+        "skin cream"
+      ],
+      "exclude_keywords": [
+        "body lotion",
+        "makeup",
+        "hair care"
+      ]
+    }
+  ]
+}

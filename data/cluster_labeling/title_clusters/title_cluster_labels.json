@@ -1,0 +1,416 @@
+[
+  {
+    "cluster_id": 0,
+    "label": "Eye and Brow Makeup",
+    "parent_label": "Makeup",
+    "description": "Eyebrow, eyeliner, mascara, lip liner, and general makeup applicator products.",
+    "confidence": "medium",
+    "include_keywords": [
+      "eyebrow",
+      "eyeliner",
+      "mascara",
+      "brow pencil",
+      "lip liner",
+      "makeup brush"
+    ],
+    "exclude_keywords": [
+      "false eyelashes",
+      "nail art",
+      "skin care"
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "label": "Refillable Containers",
+    "parent_label": "Beauty Tools",
+    "description": "Empty bottles, jars, tubes, pumps, and travel containers for cosmetics and personal care liquids.",
+    "confidence": "high",
+    "include_keywords": [
+      "empty bottle",
+      "refillable",
+      "container",
+      "jar",
+      "lip gloss tube",
+      "pump bottle",
+      "travel bottle"
+    ],
+    "exclude_keywords": [
+      "finished lotion",
+      "perfume",
+      "makeup"
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "label": "Miscellaneous Accessories",
+    "parent_label": "Beauty Accessories",
+    "description": "Mixed accessory products including masks, towels, sleep accessories, rollers, and assorted non-core beauty items.",
+    "confidence": "low",
+    "include_keywords": [
+      "mask",
+      "towel",
+      "eye mask",
+      "accessory",
+      "roller"
+    ],
+    "exclude_keywords": [
+      "hair extensions",
+      "nail polish",
+      "fragrance"
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "label": "Hair Extensions",
+    "parent_label": "Hair",
+    "description": "Human hair, synthetic hair, bundles, weaves, tape-ins, closures, frontals, and extension pieces.",
+    "confidence": "high",
+    "include_keywords": [
+      "hair extensions",
+      "bundles",
+      "weave",
+      "closure",
+      "frontal",
+      "clip in",
+      "tape in",
+      "Brazilian hair"
+    ],
+    "exclude_keywords": [
+      "wigs",
+      "hair clips",
+      "shampoo"
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "label": "Hair Curling Tools",
+    "parent_label": "Hair Tools",
+    "description": "Curlers, rollers, curling irons, heatless curling tools, and hair styling devices for waves and curls.",
+    "confidence": "high",
+    "include_keywords": [
+      "curlers",
+      "rollers",
+      "curling iron",
+      "heatless curls",
+      "perm rods",
+      "hair waver"
+    ],
+    "exclude_keywords": [
+      "hair extensions",
+      "hair care products",
+      "hair clips"
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "label": "Hair Care Products",
+    "parent_label": "Hair",
+    "description": "Shampoos, conditioners, treatments, hair color, sprays, oils, and styling products.",
+    "confidence": "high",
+    "include_keywords": [
+      "shampoo",
+      "conditioner",
+      "hair color",
+      "leave-in",
+      "hairspray",
+      "hair treatment",
+      "hair oil"
+    ],
+    "exclude_keywords": [
+      "hair extensions",
+      "curling tools",
+      "combs"
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "label": "Nail Care",
+    "parent_label": "Nails",
+    "description": "Nail polish, false nails, acrylic nail tools, nail art brushes, rhinestones, manicure and pedicure products.",
+    "confidence": "high",
+    "include_keywords": [
+      "nail",
+      "manicure",
+      "pedicure",
+      "acrylic",
+      "gel polish",
+      "false nails",
+      "nail brush"
+    ],
+    "exclude_keywords": [
+      "temporary tattoos",
+      "makeup brushes",
+      "hair tools"
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "label": "Hair Clips and Ties",
+    "parent_label": "Hair Accessories",
+    "description": "Hair clips, scrunchies, barrettes, claw clips, bun makers, hair ties, and decorative hair accessories.",
+    "confidence": "high",
+    "include_keywords": [
+      "scrunchies",
+      "hair clips",
+      "barrettes",
+      "claw clips",
+      "hair ties",
+      "bun maker",
+      "bobby pins"
+    ],
+    "exclude_keywords": [
+      "headbands",
+      "wigs",
+      "hair extensions"
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "label": "Headbands and Wraps",
+    "parent_label": "Hair Accessories",
+    "description": "Headbands, head wraps, turbans, durags, shower caps, bonnets, and related headwear accessories.",
+    "confidence": "high",
+    "include_keywords": [
+      "headband",
+      "head wrap",
+      "turban",
+      "durag",
+      "bonnet",
+      "shower cap",
+      "hair band"
+    ],
+    "exclude_keywords": [
+      "hair clips",
+      "scrunchies",
+      "wigs"
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "label": "False Eyelashes",
+    "parent_label": "Eye Makeup",
+    "description": "False lashes, eyelash extensions, lash glue, lash tools, mascara, and lash growth products.",
+    "confidence": "high",
+    "include_keywords": [
+      "false eyelashes",
+      "lashes",
+      "eyelash extensions",
+      "lash glue",
+      "mascara",
+      "lash serum"
+    ],
+    "exclude_keywords": [
+      "eyebrow pencil",
+      "face makeup",
+      "nail art"
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "label": "Face Skincare",
+    "parent_label": "Skin Care",
+    "description": "Facial skincare products including serums, eye creams, masks, moisturizers, BB/CC creams, and anti-aging treatments.",
+    "confidence": "high",
+    "include_keywords": [
+      "serum",
+      "eye cream",
+      "face mask",
+      "moisturizer",
+      "anti-aging",
+      "BB cream",
+      "CC cream"
+    ],
+    "exclude_keywords": [
+      "facial cleansing tools",
+      "body lotion",
+      "makeup tools"
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "label": "Facial Cleansing Tools",
+    "parent_label": "Skin Care Tools",
+    "description": "Cleansing brushes, exfoliating tools, sponges, blackhead removers, facial rollers, and applicator tools.",
+    "confidence": "high",
+    "include_keywords": [
+      "cleansing brush",
+      "blackhead remover",
+      "facial roller",
+      "exfoliating",
+      "sponge",
+      "scrubber",
+      "pore cleaner"
+    ],
+    "exclude_keywords": [
+      "face serum",
+      "body lotion",
+      "nail tools"
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "label": "Wigs and Hairpieces",
+    "parent_label": "Hair",
+    "description": "Wigs, lace front wigs, synthetic wigs, hair toppers, wig caps, wig stands, and hairpiece accessories.",
+    "confidence": "high",
+    "include_keywords": [
+      "wig",
+      "lace front",
+      "synthetic wig",
+      "hairpiece",
+      "hair topper",
+      "wig cap",
+      "wig stand"
+    ],
+    "exclude_keywords": [
+      "hair extensions",
+      "hair clips",
+      "headbands"
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "label": "Personal Grooming Tools",
+    "parent_label": "Grooming",
+    "description": "Dental care, shaving, callus removal, blades, toothbrushes, flossers, and assorted personal grooming tools.",
+    "confidence": "medium",
+    "include_keywords": [
+      "toothbrush",
+      "flosser",
+      "shaver",
+      "blade",
+      "callus remover",
+      "dental",
+      "grooming"
+    ],
+    "exclude_keywords": [
+      "makeup brushes",
+      "hair extensions",
+      "fragrance"
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "label": "Fragrance and Deodorant",
+    "parent_label": "Fragrance",
+    "description": "Perfumes, body sprays, deodorants, antiperspirants, essential oils, diffusers, and scented body products.",
+    "confidence": "high",
+    "include_keywords": [
+      "perfume",
+      "fragrance",
+      "deodorant",
+      "body spray",
+      "essential oil",
+      "diffuser",
+      "cologne"
+    ],
+    "exclude_keywords": [
+      "body lotion",
+      "soap",
+      "hair spray"
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "label": "Bath and Body Care",
+    "parent_label": "Body Care",
+    "description": "Soaps, body washes, hand soaps, body lotions, wipes, bath products, and general body care items.",
+    "confidence": "medium",
+    "include_keywords": [
+      "soap",
+      "body wash",
+      "hand wash",
+      "body lotion",
+      "wipes",
+      "bath",
+      "body cream"
+    ],
+    "exclude_keywords": [
+      "fragrance mist",
+      "tanning lotion",
+      "face serum"
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "label": "Face Makeup",
+    "parent_label": "Makeup",
+    "description": "Concealers, powders, eyeshadows, lip products, mascaras, makeup cases, and other color cosmetics.",
+    "confidence": "medium",
+    "include_keywords": [
+      "concealer",
+      "powder",
+      "eyeshadow",
+      "lipstick",
+      "lip gloss",
+      "mascara",
+      "makeup case"
+    ],
+    "exclude_keywords": [
+      "eyelash extensions",
+      "nail polish",
+      "skin serum"
+    ]
+  },
+  {
+    "cluster_id": 17,
+    "label": "Body Lotions and Tanning",
+    "parent_label": "Body Care",
+    "description": "Body lotions, tanning lotions, sunscreens, shave creams, oils, and body moisturizing treatments.",
+    "confidence": "high",
+    "include_keywords": [
+      "body lotion",
+      "tanning lotion",
+      "sunscreen",
+      "body cream",
+      "shave cream",
+      "body oil"
+    ],
+    "exclude_keywords": [
+      "hand soap",
+      "perfume",
+      "face serum"
+    ]
+  },
+  {
+    "cluster_id": 18,
+    "label": "Body and Nail Decals",
+    "parent_label": "Body Art",
+    "description": "Temporary tattoos, nail decals, nail stickers, rhinestones, tattoo supplies, and decorative body or nail art.",
+    "confidence": "high",
+    "include_keywords": [
+      "temporary tattoo",
+      "nail stickers",
+      "nail decals",
+      "body art",
+      "rhinestones",
+      "tattoo needle"
+    ],
+    "exclude_keywords": [
+      "nail polish",
+      "false nails",
+      "makeup"
+    ]
+  },
+  {
+    "cluster_id": 19,
+    "label": "Combs and Brushes",
+    "parent_label": "Hair Tools",
+    "description": "Hair brushes, combs, detangling tools, beard combs, barber tools, and grooming brush sets.",
+    "confidence": "high",
+    "include_keywords": [
+      "comb",
+      "brush",
+      "detangler",
+      "beard comb",
+      "barber",
+      "hair cutting",
+      "edge brush"
+    ],
+    "exclude_keywords": [
+      "makeup brushes",
+      "hair clips",
+      "curling tools"
+    ]
+  }
+]
