@@ -8,3 +8,10 @@
 ### Search
 ### Personalization/Recommendation
 ### Chatbot
+
+### Label viewer
+Run the Streamlit taxonomy label viewer:
+
+```bash
+streamlit run src/app/label_viewer.py
+```
