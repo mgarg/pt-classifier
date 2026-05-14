@@ -36,7 +36,12 @@ def load_label_space(taxonomy_file: str) -> tuple[dict[int, str], dict[str, int]
     taxonomy_path = resolve_path(taxonomy_file)
     with taxonomy_path.open() as f:
         taxonomy = json.load(f)
-    leaf_ids = sorted(set(taxonomy["assignment"]["leaf_mapping"].values()))
+    assignment = taxonomy.get("assignment", {})
+    leaf_mapping = assignment.get("leaf_mapping")
+    if leaf_mapping:
+        leaf_ids = sorted(set(leaf_mapping.values()))
+    else:
+        leaf_ids = sorted(n["id"] for n in taxonomy["nodes"] if n.get("level") == 2)
     id2label = {i: label for i, label in enumerate(leaf_ids)}
     label2id = {label: i for i, label in id2label.items()}
     return id2label, label2id
