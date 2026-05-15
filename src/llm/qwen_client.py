@@ -16,9 +16,7 @@ import httpx
 
 
 DEFAULT_BASE_URL = os.environ.get("QWEN_BASE_URL", "http://spark1:8000/v1")
-DEFAULT_MODEL = os.environ.get(
-    "QWEN_MODEL", "Intel/Qwen3.6-35B-A3B-int4-mixed-AutoRound"
-)
+DEFAULT_MODEL = os.environ.get("QWEN_MODEL", "Qwen/Qwen3.6-35B-A3B-FP8")
 
 
 @dataclass
@@ -34,7 +32,7 @@ class QwenClient:
         self,
         base_url: str = DEFAULT_BASE_URL,
         model: str = DEFAULT_MODEL,
-        timeout: float = 180.0,
+        timeout: float = 600.0,
         max_retries: int = 3,
     ):
         self.base_url = base_url.rstrip("/")
@@ -48,7 +46,7 @@ class QwenClient:
         system: str,
         user: str,
         temperature: float = 0.0,
-        max_tokens: int = 4096,
+        max_tokens: int = 6144,
     ) -> tuple[dict, QwenResponse]:
         """Call chat completions and parse the assistant message as JSON.
 
@@ -64,6 +62,10 @@ class QwenClient:
             "temperature": temperature,
             "max_tokens": max_tokens,
             "response_format": {"type": "json_object"},
+            # vLLM-specific: disable Qwen3 chain-of-thought tokens so the
+            # content field is populated directly with JSON rather than
+            # putting prose in reasoning_content.
+            "chat_template_kwargs": {"enable_thinking": False},
         }
 
         last_err: Exception | None = None
@@ -76,7 +78,10 @@ class QwenClient:
                 latency = time.time() - t0
                 resp.raise_for_status()
                 body = resp.json()
-                text = body["choices"][0]["message"]["content"]
+                msg = body["choices"][0]["message"]
+                text = msg.get("content") or msg.get("reasoning_content")
+                if not text:
+                    raise ValueError(f"empty content and reasoning_content in response: {body['choices'][0]}")
                 usage = body.get("usage", {})
                 meta = QwenResponse(
                     text=text,

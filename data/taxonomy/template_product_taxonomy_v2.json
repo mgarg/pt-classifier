@@ -1,0 +1,444 @@
+{
+  "taxonomy_id": "beauty-product-taxonomy-llm-v2",
+  "name": "Beauty Product Taxonomy - LLM-induced",
+  "version": 2,
+  "source": {
+    "method": "streaming LLM induction",
+    "model": "qwen3.6",
+    "induced_at": "2026-05-14T09:08:03Z"
+  },
+  "nodes": [
+    {
+      "id": "baby",
+      "label": "Baby Care",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Products specifically designed for infants and toddlers.",
+      "children": [
+        "baby.baby-care"
+      ]
+    },
+    {
+      "id": "baby.baby-care",
+      "label": "Baby Care",
+      "level": 2,
+      "parent_id": "baby",
+      "description": "General care products for babies including bath and hair.",
+      "children": []
+    },
+    {
+      "id": "beauty",
+      "label": "Beauty",
+      "level": 0,
+      "parent_id": null,
+      "description": "Root taxonomy for the ecommerce beauty catalog.",
+      "children": [
+        "nails",
+        "body",
+        "oral-care",
+        "baby",
+        "hair",
+        "makeup",
+        "skin-care",
+        "fragrance",
+        "beauty-tools"
+      ]
+    },
+    {
+      "id": "beauty-tools",
+      "label": "Beauty Tools",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Tools and accessories for beauty application and styling.",
+      "children": [
+        "beauty-tools.accessories",
+        "beauty-tools.sponges",
+        "beauty-tools.cases",
+        "beauty-tools.massagers",
+        "beauty-tools.clippers",
+        "beauty-tools.lashes",
+        "beauty-tools.cleaning"
+      ]
+    },
+    {
+      "id": "beauty-tools.accessories",
+      "label": "Beauty Accessories",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Bags, cases, and miscellaneous tools for beauty routines.",
+      "children": []
+    },
+    {
+      "id": "beauty-tools.cases",
+      "label": "Makeup Cases",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Cases and organizers for storing makeup and beauty tools.",
+      "children": []
+    },
+    {
+      "id": "beauty-tools.cleaning",
+      "label": "Tool Cleaning",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Brushes, sprays, and solutions for cleaning beauty tools.",
+      "children": []
+    },
+    {
+      "id": "beauty-tools.clippers",
+      "label": "Hair Clippers",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Electric clippers and trimmers for hair cutting and grooming.",
+      "children": []
+    },
+    {
+      "id": "beauty-tools.lashes",
+      "label": "False Eyelashes",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Individual and strip false eyelashes for cosmetic enhancement.",
+      "children": []
+    },
+    {
+      "id": "beauty-tools.massagers",
+      "label": "Facial Massagers",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Tools for facial massage, lymphatic drainage, and skin sculpting.",
+      "children": []
+    },
+    {
+      "id": "beauty-tools.sponges",
+      "label": "Makeup Sponges",
+      "level": 2,
+      "parent_id": "beauty-tools",
+      "description": "Sponges and blenders for applying liquid and cream cosmetics.",
+      "children": []
+    },
+    {
+      "id": "body",
+      "label": "Body Care",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Products for body hygiene, moisturizing, and treatment.",
+      "children": [
+        "body.body-oils",
+        "body.body-lotions",
+        "body.body-scrubs",
+        "body.hair-removal",
+        "body.deodorant",
+        "body.soap",
+        "body.pedicure",
+        "body.body-wipes"
+      ]
+    },
+    {
+      "id": "body.body-lotions",
+      "label": "Body Lotions",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Creams and lotions for body hydration.",
+      "children": []
+    },
+    {
+      "id": "body.body-oils",
+      "label": "Body Oils",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Oils for moisturizing and treating the body.",
+      "children": []
+    },
+    {
+      "id": "body.body-scrubs",
+      "label": "Body Scrubs",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Exfoliating scrubs for body skin.",
+      "children": []
+    },
+    {
+      "id": "body.body-wipes",
+      "label": "Body Wipes",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Cleansing wipes and cloths for body hygiene and refreshment.",
+      "children": []
+    },
+    {
+      "id": "body.deodorant",
+      "label": "Deodorant",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Antiperspirants and deodorants for body odor.",
+      "children": []
+    },
+    {
+      "id": "body.hair-removal",
+      "label": "Hair Removal",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Waxes, creams, and tools for removing unwanted hair.",
+      "children": []
+    },
+    {
+      "id": "body.pedicure",
+      "label": "Pedicure Tools",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Devices and tools for foot care and callus removal.",
+      "children": []
+    },
+    {
+      "id": "body.soap",
+      "label": "Soap",
+      "level": 2,
+      "parent_id": "body",
+      "description": "Bar soaps and liquid soaps for cleansing.",
+      "children": []
+    },
+    {
+      "id": "fragrance",
+      "label": "Fragrance",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Perfumes, colognes, and scented products.",
+      "children": [
+        "fragrance.fragrance"
+      ]
+    },
+    {
+      "id": "fragrance.fragrance",
+      "label": "Fragrance",
+      "level": 2,
+      "parent_id": "fragrance",
+      "description": "Perfumes and colognes for personal scent.",
+      "children": []
+    },
+    {
+      "id": "hair",
+      "label": "Hair",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Products for hair care, styling, extensions, and accessories.",
+      "children": [
+        "hair.hair-extensions",
+        "hair.wigs",
+        "hair.hair-conditioner",
+        "hair.hair-accessories",
+        "hair.hair-tools",
+        "hair.hair-color"
+      ]
+    },
+    {
+      "id": "hair.hair-accessories",
+      "label": "Hair Accessories",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Bands, clips, bonnets, and other hair styling accessories.",
+      "children": []
+    },
+    {
+      "id": "hair.hair-color",
+      "label": "Hair Color",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Temporary and permanent hair dyes, root touch-up products, and color sprays.",
+      "children": []
+    },
+    {
+      "id": "hair.hair-conditioner",
+      "label": "Hair Conditioner",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Conditioners and treatments to moisturize and soften hair.",
+      "children": []
+    },
+    {
+      "id": "hair.hair-extensions",
+      "label": "Hair Extensions",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Extensions, weaves, and hairpieces for adding length or volume.",
+      "children": []
+    },
+    {
+      "id": "hair.hair-tools",
+      "label": "Hair Tools",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Brushes, combs, rollers, and styling devices.",
+      "children": []
+    },
+    {
+      "id": "hair.wigs",
+      "label": "Wigs",
+      "level": 2,
+      "parent_id": "hair",
+      "description": "Full wigs and hairpieces for temporary or permanent styling.",
+      "children": []
+    },
+    {
+      "id": "makeup",
+      "label": "Makeup",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Cosmetics for face, eyes, and lips.",
+      "children": [
+        "makeup.foundations",
+        "makeup.primer",
+        "makeup.eyebrow-tools",
+        "makeup.mascara",
+        "makeup.lip-color",
+        "makeup.eyeshadow"
+      ]
+    },
+    {
+      "id": "makeup.eyebrow-tools",
+      "label": "Eyebrow Tools",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Stencils, waxes, and gels for eyebrow shaping and styling.",
+      "children": []
+    },
+    {
+      "id": "makeup.eyeshadow",
+      "label": "Eyeshadow",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Powder or cream pigments for coloring the eyelids.",
+      "children": []
+    },
+    {
+      "id": "makeup.foundations",
+      "label": "Foundations",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Liquid, stick, and powder foundations for base makeup.",
+      "children": []
+    },
+    {
+      "id": "makeup.lip-color",
+      "label": "Lip Color",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Lipsticks, glosses, and balms for coloring and hydrating lips.",
+      "children": []
+    },
+    {
+      "id": "makeup.mascara",
+      "label": "Mascara",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Mascaras for volumizing, lengthening, and defining lashes.",
+      "children": []
+    },
+    {
+      "id": "makeup.primer",
+      "label": "Primer",
+      "level": 2,
+      "parent_id": "makeup",
+      "description": "Face primers to smooth skin and extend makeup wear.",
+      "children": []
+    },
+    {
+      "id": "nails",
+      "label": "Nails",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Products for nail care, art, and styling.",
+      "children": [
+        "nails.nail-tools",
+        "nails.nail-art",
+        "nails.nail-polish",
+        "nails.nail-tips"
+      ]
+    },
+    {
+      "id": "nails.nail-art",
+      "label": "Nail Art",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Stickers, foils, stamps, and decorations for nails.",
+      "children": []
+    },
+    {
+      "id": "nails.nail-polish",
+      "label": "Nail Polish",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Liquid color coatings for nails, including gel and regular polish.",
+      "children": []
+    },
+    {
+      "id": "nails.nail-tips",
+      "label": "Nail Tips",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Artificial false nail tips for acrylic, gel, or dip powder applications.",
+      "children": []
+    },
+    {
+      "id": "nails.nail-tools",
+      "label": "Nail Tools",
+      "level": 2,
+      "parent_id": "nails",
+      "description": "Files, buffers, and other manicure tools.",
+      "children": []
+    },
+    {
+      "id": "oral-care",
+      "label": "Oral Care",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Products for teeth and mouth hygiene.",
+      "children": [
+        "oral-care.floss",
+        "oral-care.toothbrushes"
+      ]
+    },
+    {
+      "id": "oral-care.floss",
+      "label": "Floss",
+      "level": 2,
+      "parent_id": "oral-care",
+      "description": "Dental floss and flossing tools.",
+      "children": []
+    },
+    {
+      "id": "oral-care.toothbrushes",
+      "label": "Electric Toothbrushes",
+      "level": 2,
+      "parent_id": "oral-care",
+      "description": "Rechargeable and battery-powered electric toothbrushes and their replacement heads.",
+      "children": []
+    },
+    {
+      "id": "skin-care",
+      "label": "Skin Care",
+      "level": 1,
+      "parent_id": "beauty",
+      "description": "Products for facial and body skin treatment and cleansing.",
+      "children": [
+        "skin-care.serums",
+        "skin-care.treatments"
+      ]
+    },
+    {
+      "id": "skin-care.serums",
+      "label": "Serums",
+      "level": 2,
+      "parent_id": "skin-care",
+      "description": "Concentrated liquid treatments for targeted skin concerns.",
+      "children": []
+    },
+    {
+      "id": "skin-care.treatments",
+      "label": "Skin Treatments",
+      "level": 2,
+      "parent_id": "skin-care",
+      "description": "Patches, peels, and specialized treatments for skin issues.",
+      "children": []
+    }
+  ]
+}

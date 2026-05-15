@@ -81,7 +81,10 @@ Rules:
 - Leaf ids must be lowercase, hyphenated, prefixed with their parent id and a dot, e.g. "hair.hair-extensions".
 - Parent ids must be lowercase, hyphenated, single segment (no dots), e.g. "skin-care".
 - Every leaf must have a parent that is a level-1 category under "beauty".
-- Aim for 6-12 level-1 parents and 25-45 leaves total when the run ends.
+- **Be conservative about adding new leaves.** Target 6-12 level-1 parents and 20-35 leaves TOTAL.
+  - If the current taxonomy already has ≥ 30 leaves, do NOT add new leaves unless absolutely no existing leaf could possibly fit. Default to assigning to the closest existing leaf, even if imperfect.
+  - Only create a new leaf when at least 3 products in this batch clearly share the same product type AND that type doesn't already exist.
+- Prefer broader, more inclusive leaf names ("hair-styling-tools" not separate "curling-irons", "flat-irons", "hair-dryers").
 - Descriptions must be ONE sentence, max 30 words.
 - No prose outside the JSON. No markdown fences.
 """
@@ -334,7 +337,7 @@ def induce(
     output_taxonomy: str = "data/taxonomy/template_product_taxonomy_v2.json",
     output_trace: str = "data/taxonomy/induction_trace.jsonl",
     batch_size: int = 50,
-    consolidate_every: int = 20,
+    consolidate_every: int = 0,  # 0 disables consolidation; LLM tends to over-merge
     converge_window: int = 10,
     converge_threshold: float = 0.5,  # avg new leaves per batch (raw count, not normalized)
     max_batches: int | None = None,
@@ -411,9 +414,25 @@ def induce(
             trace_f.write(json.dumps(record) + "\n")
             trace_f.flush()
 
-            # Consolidation pass
-            if growing and batch_idx > 0 and (batch_idx + 1) % consolidate_every == 0:
-                consolidate_record = run_consolidation(qwen, tax, df, all_assignments, merges)
+            # Persist taxonomy snapshot every batch (cheap, ~10kb)
+            tmp_path = Path(output_taxonomy).with_suffix(".json.tmp")
+            tmp_path.parent.mkdir(parents=True, exist_ok=True)
+            tmp_path.write_text(json.dumps(tax.to_json(), indent=2))
+            tmp_path.replace(Path(output_taxonomy))
+
+            # Consolidation pass (best-effort: failures don't kill the run)
+            if consolidate_every > 0 and growing and batch_idx > 0 and (batch_idx + 1) % consolidate_every == 0:
+                try:
+                    consolidate_record = run_consolidation(qwen, tax, df, all_assignments, merges)
+                except Exception as e:
+                    print(f"[consolidate] batch {batch_idx} failed: {e!r} — continuing")
+                    consolidate_record = {
+                        "event": "consolidate",
+                        "error": repr(e),
+                        "n_leaves_total": len(tax.leaves()),
+                        "n_parents_total": len(tax.parents()),
+                        "new_leaves_this_batch": 0,
+                    }
                 consolidate_record["batch_idx"] = batch_idx
                 history.append(consolidate_record)
                 trace_f.write(json.dumps(consolidate_record) + "\n")
@@ -426,6 +445,8 @@ def induce(
                 print(f"[freeze] taxonomy frozen at batch {batch_idx} — {len(tax.leaves())} leaves, {len(tax.parents())} parents")
                 trace_f.write(json.dumps({"event": "freeze", "batch_idx": batch_idx}) + "\n")
                 trace_f.flush()
+                # Stop streaming here — relabel_all.py runs the full assign-only pass.
+                break
     finally:
         trace_f.close()
         qwen.close()
@@ -438,15 +459,15 @@ def induce(
     print(f"[wrote] {trace_path}: {len(history)} records")
 
 
-def run_consolidation(qwen, tax, df, all_assignments, merges) -> dict:
+def run_consolidation(qwen, tax, df, all_assignments, merges, samples_per_leaf: int = 3) -> dict:
     """Sample products per current leaf, send to LLM for refactoring."""
     leaf_to_titles: dict[str, list[str]] = {lid: [] for lid in tax.leaves()}
     by_asin = {a["parent_asin"]: a["leaf_id"] for a in all_assignments}
     for _, row in df.iterrows():
         asin = row.get("parent_asin")
         leaf_id = by_asin.get(asin)
-        if leaf_id and leaf_id in leaf_to_titles and len(leaf_to_titles[leaf_id]) < 5:
-            leaf_to_titles[leaf_id].append(to_text(row.get("title", ""))[:200])
+        if leaf_id and leaf_id in leaf_to_titles and len(leaf_to_titles[leaf_id]) < samples_per_leaf:
+            leaf_to_titles[leaf_id].append(to_text(row.get("title", ""))[:140])
 
     sample_lines = []
     for lid in sorted(leaf_to_titles.keys()):
@@ -462,7 +483,7 @@ def run_consolidation(qwen, tax, df, all_assignments, merges) -> dict:
         taxonomy_json=tax.render_for_prompt(),
         samples_block="\n".join(sample_lines),
     )
-    parsed, meta = qwen.chat_json(system=SYSTEM_PROMPT, user=user_prompt)
+    parsed, meta = qwen.chat_json(system=SYSTEM_PROMPT, user=user_prompt, max_tokens=16384)
     ops = parsed.get("ops", [])
     op_summary = apply_ops(tax, ops, merges)
     return {
